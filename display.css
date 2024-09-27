@@ -1,0 +1,502 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 15px;
+}
+
+nav a img {
+  display: inline;
+  width: 100px;
+  float: inline-start;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a img:hover {
+  border: 2px solid white;
+  cursor: pointer;
+  transform: scaleX(1.3);
+}
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  margin-top: 30px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  margin-right: 30px;
+  transition: all 0.5s ease-in-out;
+}
+
+nav ul li a:hover {
+  border: 2px solid white;
+  border-radius: 5%;
+  padding: 10px;
+  box-shadow: 1px 5px 10px white;
+}
+
+body {
+  margin-top: 110px;
+  background-color: #ccc5b9;
+}
+
+/* Homepage Styling */
+#home {
+  margin-top: 200px;
+  font-family: "Raleway", sans-serif;
+}
+
+.left {
+  width: 45%;
+  height: 500px;
+  float: left;
+  margin-left: 50px;
+}
+
+.left h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.left p {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 500;
+}
+
+.left h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: underline dotted;
+}
+
+.left ul li p {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 500;
+}
+.right {
+  width: 45%;
+  height: auto;
+  float: right;
+  margin-right: 50px;
+}
+.right h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.shoe-item {
+  margin-top: 20px;
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  margin-top: 0;
+  margin-left: 0;
+  transition: all 1s ease-in-out;
+}
+
+.shoe-item p {
+  font-size: small;
+}
+
+.shoe-item:hover {
+  transform: scaleY(1.1);
+  border: 3px solid grey;
+  border-radius: 5%;
+  cursor: pointer;
+  box-shadow: 2px 5px 10px black;
+}
+
+.shoe-item img {
+  width: 200px;
+  height: 200px;
+}
+.right a {
+  text-align: center;
+  margin-top: 30px;
+  display: block;
+  border: 2px solid black;
+  background-color: black;
+  color: beige;
+  padding: 10px;
+  height: 40px;
+  width: 610px;
+  transition: all 0.4s ease-in-out;
+}
+
+.right a:hover {
+  transform: scaleY(1.1);
+  box-shadow: 1px 5px 10px black;
+}
+.back-to-top {
+  position: absolute;
+  bottom: -70px;
+  right: 20px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 20;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  clear: both;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer img {
+  width: 25px;
+  height: 25px;
+}
+
+.footer-column p {
+  display: inline;
+}
+.footer-column {
+  display: inline-block;
+  width: 30%;
+  margin: 0 1%;
+}
+
+/* Product Styling */
+#products h1 {
+  text-align: center;
+}
+.product-container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.product-item {
+  width: 30%;
+  margin: 15px;
+  float: left;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.product-item img {
+  width: 200px;
+  height: 200px;
+}
+
+.back-to-top-p {
+  font-family: "Raleway", sans-serif;
+  position: absolute;
+  bottom: -220px;
+  right: 20px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 20;
+}
+.product-item:hover {
+  transform: scale(1.05);
+}
+
+/* About Page Styling */
+#about h1 {
+  text-align: center;
+}
+
+#about main {
+  margin-bottom: 100px;
+}
+.about-container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 50px;
+}
+
+.about-info {
+  width: 60%;
+  float: left;
+  padding-right: 20px;
+}
+
+.about-info h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-info p {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: "Sarabun", sans-serif;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  width: 35%;
+  float: right;
+  transition: all 0.5s ease-in-out;
+}
+
+.about-image:hover {
+  transform: translateY(1.02);
+  transform: scale(1.05);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.back-to-top-a {
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  bottom: -10px;
+  right: 20px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 20;
+}
+
+#about footer {
+  margin-top: 10px;
+}
+
+/* Contact Styling */
+
+.contact-container {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #f0ead6;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: block;
+  font-family: "Sarabun", sans-serif;
+}
+
+.contact-form label {
+  font-family: "Raleway", sans-serif;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-family: "Sarabun", sans-serif;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.contact-form button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Sarabun", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+  background-color: #444;
+  box-shadow: 1px 5px 10px black;
+  transform: scale(1.05);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 100px;
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  color: #000;
+}
+
+.back-to-top-c {
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  bottom: -30px;
+  right: 20px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 20;
+}
+
+@media (max-width: 768px) {
+  /* Adjust header */
+  header {
+    padding: 10px;
+  }
+
+  nav ul {
+    text-align: left;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    margin-right: 0;
+  }
+
+  /* Adjust homepage layout */
+  #home {
+    margin-top: 150px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    float: none;
+    margin: 20px 0;
+  }
+
+  /* Adjust shoe items */
+  .shoe-item {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .shoe-item img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .right a {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  /* Footer adjustments */
+  footer {
+    padding: 10px;
+  }
+
+  .footer-column {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Product page adjustments */
+  .product-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .product-item {
+    width: 100%;
+    margin-bottom: 20px;
+    float: none;
+  }
+
+  .product-item img {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* About page layout */
+  .about-container {
+    padding-top: 20px;
+  }
+
+  .about-info,
+  .about-image {
+    width: 100%;
+    float: none;
+  }
+
+  .about-image img {
+    width: 100%;
+  }
+
+  /* Contact form adjustments */
+  .contact-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  /* Adjust back-to-top buttons */
+  .back-to-top,
+  .back-to-top-a,
+  .back-to-top-p,
+  .back-to-top-c {
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+  }
+}
